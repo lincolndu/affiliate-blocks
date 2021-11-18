@@ -1,0 +1,128 @@
+.settings_page_affiliate_blocks tr.disabled {
+	opacity: .5
+}
+
+.settings_page_affiliate_blocks table {
+	position: relative;
+}
+
+.no-items {
+	display: none
+}
+
+.example-block {
+	display: none
+}
+
+.poststuff {
+	padding-top: 0
+}
+
+#ab_enable_disable li{
+	width: 31%;
+	display: inline-block;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	margin-left: 1%;
+	margin-right: 1%; 
+	margin-bottom: 20px;
+}
+#ab_enable_disable li.disabled{
+	 
+}
+#ab_enable_disable li .switch{
+	float: right;
+}
+
+#ab_enable_disable .switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 22px;
+}
+
+#ab_enable_disable .switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#ab_enable_disable .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#ab_enable_disable .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #afafaf;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#ab_enable_disable a.slider{	
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #afafaf;
+	margin-top: 2px;
+}
+
+#ab_enable_disable input:checked + .slider {
+  background-color: #e4f5e4;
+}
+
+#ab_enable_disable input:checked + a.slider{
+	color: #209e25;
+}
+
+#ab_enable_disable input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+#ab_enable_disable input:checked + .slider:before {
+  -webkit-transform: translateX(65px);
+  -ms-transform: translateX(65px);
+  transform: translateX(65px);
+  background-color: #209e25;
+}
+
+/* Rounded sliders */
+#ab_enable_disable .slider.round {
+  border-radius: 34px;
+  text-align: center;
+	font-size: 10px;
+}
+
+#ab_enable_disable .slider.round:before {
+  border-radius: 50%;
+}
+
+.btn_enb_disb{
+  margin-top: 70px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-right: 3%;
+}
+.btn_enb_disb.enb{
+  background: #002c51;
+  border: 1px solid #002c51;
+  color: #fff;
+}
+.btn_enb_disb.disb{
+  background: #e7153a;
+  border: 1px solid #e7153a;
+  color: #fff;
+}
